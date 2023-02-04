@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="task1" >
+    <script>
+let sentence = "Godzilla is a prehistoric reptilian monster awakened and empowered by nuclear radiation.";
+let numWords = sentence.split(" ").length;
+let numVowels = 0;
+
+for (let i = 0; i < sentence.length; i++) {
+  let char = sentence[i];
+  
+  // Check if the current character is a vowel
+  if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" ||
+      char === "A" || char === "E" || char === "I" || char === "O" || char === "U") {
+    numVowels++;
+  }
+}
+
+console.log("Number of words:", numWords);
+console.log("Number of vowels:", numVowels);
+    </script>
+    </div>
+
+    <div class="task2">
+<script>
+    let set1 = [3, 1, 7, 9, 2];
+let set2 = [2, 5, 1];
+let sum = 0;
+
+for (let i = 0; i < set1.length; i++) {
+  let element = set1[i];
+  
+  // If element is not present in set2, add it to the sum
+  if (!set2.includes(element)) {
+    sum += element;
+  }
+}
+
+for (let i = 0; i < set2.length; i++) {
+  let element = set2[i];
+  
+  // If element is not present in set1, add it to the sum
+  if (!set1.includes(element)) {
+    sum += element;
+  }
+}
+
+console.log("Sum of distinct elements:", sum);
+
+</script>
+    </div>
+</body>
+</html>
